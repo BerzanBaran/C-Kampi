@@ -170,7 +170,7 @@ namespace _03_MakingDecision
                     }
                     break;  
 
-            }
+            } 
 
             #endregion
             Console.Read();
