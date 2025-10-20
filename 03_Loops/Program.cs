@@ -72,12 +72,12 @@ namespace _03_Loops
             // Console.WriteLine(count);
 
 
-            //int bacterium = 1;
-            //for(int i = 1; i <= 24; i++)
-            //{
-            //    bacterium *= 2;
-            //    Console.WriteLine(i + ".Bacterial count at the end of the hour: " + bacterium);
-            //}
+            int bacterium = 1;
+            for (int i = 1; i <= 24; i++)
+            {
+                bacterium *= 2;
+                Console.WriteLine(i + ".Bacterial count at the end of the hour: " + bacterium);
+            }
 
 
             #endregion
