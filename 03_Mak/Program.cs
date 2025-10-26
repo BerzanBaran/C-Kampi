@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _03_MakingDecision
+namespace _03_Mak
 {
     internal class Program
     {
@@ -121,26 +120,26 @@ namespace _03_MakingDecision
             #endregion
 
             #region Switch Case
-            //Console.Write("Please enter a day number (1-7): ");
-            //int day =Convert.ToInt32( Console.ReadLine());
-            //Console.WriteLine();
+            Console.Write("Please enter a day number (1-7): ");
+            int day = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine();
 
-            //switch (day)
-            //{
-            //    case 1:Console.WriteLine("Monday");break;
-            //    case 2:Console.WriteLine("Tuesday");break;
-            //    case 3:Console.WriteLine("Wednesday");break;
-            //    case 4:Console.WriteLine("Thursday");break;
-            //    case 5:Console.WriteLine("Friday");break;
-            //    case 6: Console.WriteLine("Saturday");break;
-            //    case 7:Console.WriteLine("Sunday");break;
-            //default: 
-            //     Console.WriteLine("Invalid day number! Please enter a number between 1 and 7.");break;
-            //            }
+            switch (day)
+            {
+                case 1: Console.WriteLine("Monday"); break;
+                case 2: Console.WriteLine("Tuesday"); break;
+                case 3: Console.WriteLine("Wednesday"); break;
+                case 4: Console.WriteLine("Thursday"); break;
+                case 5: Console.WriteLine("Friday"); break;
+                case 6: Console.WriteLine("Saturday"); break;
+                case 7: Console.WriteLine("Sunday"); break;
+                default:
+                    Console.WriteLine("Invalid day number! Please enter a number between 1 and 7."); break;
+            }
 
             #endregion
             #region Switch Case with Calculations
-           
+
             Console.Write("Enter the first number: ");
             double number1 = Convert.ToDouble(Console.ReadLine());
             Console.Write("Enter the second number: ");
@@ -156,21 +155,21 @@ namespace _03_MakingDecision
                     Console.WriteLine("Result: " + (number1 + number2)); break;
                 case '-':
                     Console.WriteLine("Result: " + (number1 - number2)); break;
-                    case '*':
+                case '*':
                     Console.WriteLine("Result: " + (number1 * number2)); break;
 
-                case '/':   
-                    if(number2!=0)
+                case '/':
+                    if (number2 != 0)
                     {
-                       Console.WriteLine("Result: " + (number1 / number2));
+                        Console.WriteLine("Result: " + (number1 / number2));
                     }
                     else
                     {
                         Console.WriteLine("Error: Division by zero is not allowed.");
                     }
-                    break;  
+                    break;
 
-            } 
+            }
 
             #endregion
             Console.Read();
